@@ -1,0 +1,279 @@
+:root{
+  --bgc:linear-gradient(to bottom, #26D0CE, #2c5364);
+  --head:rgba(0, 0, 0, .3);
+  --rpc: rgba(255, 255, 255, .2);
+  /* --rpc:linear-gradient(red, blue); */
+  --atnd: #113e5fbf;
+  --bsd:rgba(0, 0, 0, .2);
+  --bsdh: #27c2c280;
+  --bsdc: black;
+  --img1:url("../md/diagmonds.png");
+}
+ /* var(--secundario) ; */
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+html{
+  height: 100%;
+}
+body{
+  /* background-image: url('../md/font.png'); */
+  background: var(--bgc);
+  /* background:url("../md/font.png"), var(--bgc) ; */
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  height: 100%;
+  margin: 0;
+}
+/*header*/
+header{
+  background:var(--img1);
+  max-width: 100%;
+  min-height: 80px;
+  background-color: var(--head);
+  color: white;
+  font-size: 24px;
+}
+nav.session{
+  list-style: none;
+  padding-top: 25px;
+  display: flex;
+  margin: 0 10%;
+  justify-content: space-between;
+  align-items: center;
+}
+header:after{
+  content: '';
+  border-bottom: 2px solid black;
+  margin: 0 auto;
+  height: 2px;
+  width: 80%;
+  display: block;
+}
+nav.session a{
+  color: white;
+  text-decoration: none;
+}
+/*header*/
+h2{
+  padding: 20px 20px;
+  margin: 0;
+}
+h2::after{
+  content: '';
+  border-bottom: 1px solid black;
+  height: 5px;
+  width: 200px;
+  display: block;
+}
+
+.login{
+  display: grid;
+  grid-template-columns:repeat(2, 1fr);
+  grid-gap: 10px;
+  max-width: 300px;
+  margin: 200px auto;
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+}
+.submit{
+  text-transform: uppercase;
+  background-color: black;
+  border: none;
+  border-radius: 5px;
+  color: white;
+}
+.submit:hover{
+  transition: .5s;
+  color: blue;
+}
+button{
+  cursor: pointer;
+  background-color: var(--bsd);
+}
+/**/
+section{
+  margin-top: 0;
+  width: 80%;
+  margin: 0 auto;
+}
+.beside {
+  position: absolute;
+  left: 0px;
+  width: 10%;
+  min-height: 100%;
+  background: var(--bsd);
+  border-top-right-radius: 10px;
+}
+.beside ul{
+  margin-top: 0;
+  padding: 0;
+}
+.beside ul li{
+  margin-top: 5px;
+  transition: 1s;
+}
+.beside li a{
+  list-style: none;
+  text-decoration: none;
+  color: var(--bsdc);
+  margin: 10px;
+  transition: .2s;
+}
+.hide{
+  margin-left: 5px;
+  display: none;
+  transition: .5s;
+}
+.beside li:hover{
+  background-color: var(--bsdh);
+}
+/*index*/
+.index{
+    display: flex;
+}
+/*bttons*/
+input#editar, #verhist{
+  border: none;
+  border-radius: 5px;
+  background: var(--bsd);
+}
+input, textarea, select, button{
+  border: none;
+  background-color: var(--rpc);
+}
+.intro{
+  border: 1px solid gray
+}
+/*Form from index*/
+.create{
+  transition: .5s;
+  cursor: pointer;
+}
+.crear form{
+  display: none;
+}
+.equipos{
+  cursor: pointer;
+}
+.verequipos{
+  display: none;
+}
+.lorem{
+  cursor: pointer;
+}
+.loremcnt{
+  display: none;
+}
+/**/
+/*Mostrar reportes*/
+.mostrar{
+  margin: 10px auto;
+  border-radius: 10px;
+}
+.mostrar> p{
+  display: none;
+}
+.reporte{
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  padding: 20px;
+  background-color: var(--rpc);
+  border-radius: 10px;
+  margin-bottom: 15px;
+}
+.reporte a{
+  display: inline-block;
+  background-color: var(--atnd);
+  border-radius: 5px;
+  margin-top: 10px;
+  text-transform: uppercase;
+  font-weight: bold;
+  text-decoration: none;
+  color: black;
+}
+.reporte div{
+  margin-top: 10px;
+}
+.reporte span{
+  font-weight: bold;
+}
+/*Mostrar reportes*/
+/*edicion*/
+.datosr{
+  display: grid;
+  grid-area: dr;
+  padding: 20px;
+  border: 1px solid gray;
+}
+.datosu{
+  display: grid;
+  grid-area: du;
+  padding: 20px;
+  border: 1px solid gray;
+}
+.de{
+  display: grid;
+  grid-area: de;
+  border: 1px solid gray;
+  padding: 20px;
+}
+.ac{
+  display: grid;
+  grid-area: ac;
+  border: 1px solid gray;
+  padding: 20px;
+}
+.fm{
+  border: 1px solid gray;
+}
+.cs{
+  display: grid;
+  grid-area: cs;
+  padding: 20px;
+  border: 1px solid gray;
+}
+.st{
+  border: 1px solid gray;
+}
+.btn{
+  grid-area: bt;
+  padding: 20px;
+}
+.edicion{
+  padding: 20px;
+  border-radius: 10px;
+  display: grid;
+  grid-template-areas: 'dr du'
+                       'dr de'
+                       'ac fm'
+                       'cs cs'
+                       'bt bt'        ;
+  background-color: var(--rpc);
+}
+form{
+  display: grid;
+}
+form span{
+  font-weight: bold;
+  margin-top: 10px;
+}
+.historial span{
+  font-weight: bold;
+  margin-top: 10px;
+}
+/*firma*/
+.calificacion{
+  padding: 20px;
+}
+canvas {
+  display: block;
+  margin: 20px auto;
+  border-radius: 3px;
+  box-shadow: 0px 0px 15px 3px #ccc;
+  cursor:crosshair;
+}
+.buttons{
+  padding: 20px;
+}

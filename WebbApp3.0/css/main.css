@@ -1,0 +1,210 @@
+/*Generales*/
+html{
+    box-sizing: border-box;
+}
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+body{
+    background-color: #fafafa;
+}
+
+.contenedor{
+    max-width: 1200px;
+    width: 90%;
+    margin: 0px auto;
+}
+
+/**Header**/
+
+.header-principal{
+    display: grid;
+    justify-content: center;
+    padding: 1rem;
+}
+
+.principal{
+    display: flex;
+    flex-direction: column;
+}
+
+@media (min-width: 768px) {
+    .principal{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 1.5rem;
+    }
+}
+
+
+.imagen-imjuve{
+    min-height: 200px;
+    display: flex;
+    background-image: url(../img/imjuve.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    flex: 1;
+    justify-content: center;
+}
+
+@media (min-width: 996px) {
+    .imagen-imjuve{
+        min-height: 400px;
+        background-size: cover;
+        background-position: center;
+    }
+}
+
+.num-reporte{
+    display: flex;
+}
+
+.registro{
+    width: 75%;
+    padding: 3rem 1rem;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex: 2;
+    justify-content: center;
+}
+
+label{
+    display: block;
+    text-transform: uppercase;
+    font-weight: bold;
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+input:not([type="submit"])
+{
+    padding: 1rem;
+    display: block;
+    width: 100%;
+    border: groove;
+    border-radius: 1rem;
+}
+
+
+
+.button{
+    background-color: #006633;
+    color: #fafafa;
+    font-weight: 700;
+    text-decoration: none;
+    font-size: 1.8rem;
+    padding: 1rem 3rem;
+    margin-top: 3rem;
+    text-align: center;
+    border: none;
+    border-radius: 1rem;
+    display: block;
+    flex: 0 0 100%;
+}
+
+@media (min-width: 768px) {
+    .button{
+        flex: 0 0 auto;
+    }
+}
+
+.button:hover{
+    background-color: #00562B;
+}
+
+.enviar{
+    display: grid;
+    justify-items:flex-end;
+}
+
+#myCanvas{
+    border:4px solid #444;
+    border-radius: 15px;
+    background-color: #fafafa;
+    cursor: crosshair;
+}
+.myCanvas{
+    position: relative;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    cursor: crosshair;
+}
+
+.firma{
+    margin:auto;
+}
+
+/*Footer*/
+
+.site-footer{
+    background-color: #006633;
+    padding: 4.4rem ;
+    margin-top: 2rem;
+    display:flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+.site-footer h3, p{
+    color: #fafafa;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 1.6rem;
+}
+
+/**Calificaciones**/
+
+.todo{
+    display: inline-block;
+    justify-items: center;
+    width: 100%;
+}
+
+@media (min-width: 768px) {
+    .todo{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-gap: 1rem;
+    }
+}
+
+
+.signcontract{
+    width: auto;
+    cursor: crosshair;
+}
+
+
+.form-check-input {
+    position: absolute;
+    margin-top: 0.3rem;
+    margin-left: -1.25rem;
+  }
+
+  .form-check-input:disabled ~ .form-check-label {
+    color: #6c757d;
+  }
+
+  .form-check-label {
+    margin-bottom: 0;
+  }
+
+  .form-check-inline {
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    -ms-flex-align: center;
+    align-items: center;
+    padding-left: 0;
+    margin-right: 0.75rem;
+  }
+
+  .form-check-inline .form-check-input {
+    position: static;
+    margin-top: 0;
+    margin-right: 0.3125rem;
+    margin-left: 0;
+  }

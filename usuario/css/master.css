@@ -1,0 +1,66 @@
+/*GENERALES*/
+body{
+  background-color: #dddddd;
+}
+h1{
+  text-align: center;
+  color: black;
+  border-bottom: 2px solid #4182E7;
+  padding-bottom: 15px;
+}
+.contenedor{
+  max-width: 1200px;
+  margin: 0 auto;
+}
+img{
+  display: block;
+  margin: 0 auto;
+}
+.uso{
+  display: flex;
+  justify-content: center;
+}
+.hide{
+  display: none!important;
+}
+/**/
+a{
+  font-size: 2rem;
+  color: black  ;
+  background-color: #4D92DF;
+  padding: 20px 60px;
+  text-decoration: none;
+  border-radius: 5px;
+  margin-right: 10px
+}
+/*FORMULARIOS*/
+form{
+  padding: 20px;
+  border: 1px solid ;
+  font-size: 18px;
+}
+label{
+  color: black;
+}
+input{
+  margin: 5px auto;
+  border-radius: 5px;
+  border: 1px solid gray;
+  background-color: white;
+}
+textarea{
+  border-radius: 5px;
+  width: 90%;
+  height: 15rem;
+  background-color: white;
+}
+.row{
+  display: flex;
+  flex: 0 0 calc(33.3% - 1rem);
+  justify-content: space-around;
+}
+.center{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
